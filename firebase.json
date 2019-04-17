@@ -1,5 +1,5 @@
 "hosting": {
-    "public": "dist",  // the only required attribute for hosting
+    "public": "dist/fullAppPlatform",  // the only required attribute for hosting
     "ignore": [
       "firebase.json",
       "**/.*",
