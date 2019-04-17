@@ -1,28 +1,17 @@
 language: node_js
 node_js:
   - "node"
-script:
-  -
-
-branches:
-  only:
-    - dev
 
 before_script:
   - npm install -g firebase-tools
   - npm install -g @angular/cli
 
-  script:
+script:
   - ng build 
 
-  after_success:
+after_success:
   - firebase deploy --token $FIREBASE_TOKEN
-  
 
-deploy:
-provider: firebase
-token:
-  secure: "1/BlH4sr2YzwHrQQOOvEl4H8oVikNZdQi6HR3XFfjzo9E"
 
 
 
