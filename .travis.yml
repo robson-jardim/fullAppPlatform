@@ -4,6 +4,21 @@ node_js:
 script:
   -
 
+branches:
+  only:
+    - dev
+
+before_script:
+  - npm install -g firebase-tools
+  - npm install -g @angular/cli
+
+  script:
+  - ng build 
+
+  after_success:
+  - firebase deploy --token $FIREBASE_TOKEN
+  
+
 deploy:
 provider: firebase
 token:

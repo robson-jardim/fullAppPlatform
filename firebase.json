@@ -1,9 +1,16 @@
 {
-    "hosting" : {
-    "public": "dist/fullAppPlatform",  // the only required attribute for hosting
+  "hosting": {
+    "public": "dist/fullAppPlatform",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
     ]
   }
+}
