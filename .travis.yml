@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "node"
+script:
+  -
+
+deploy:
+provider: firebase
+token:
+  secure: "1/BlH4sr2YzwHrQQOOvEl4H8oVikNZdQi6HR3XFfjzo9E"
+
+
+
