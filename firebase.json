@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist/fullAppPlatform",
+    "public": "www",
     "ignore": [
       "firebase.json",
       "**/.*",
